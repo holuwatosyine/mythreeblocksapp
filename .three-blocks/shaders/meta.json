@@ -1,0 +1,74 @@
+{
+	"runtime": {
+		"capture": {
+			"adapter": "WebGPU adapter",
+			"features": [],
+			"userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36"
+		},
+		"three": "0.185.1",
+		"threeBlocks": "0.6.0",
+		"threeBlocksShaderClosure": "64e2e021698f0bbb6e72c59c6112fa003450b50938cd226626eaaae0886dcb00"
+	},
+	"scenes": {
+		"text": {
+			"artifact": "text.webgpu.ts",
+			"artifactHash": "8d415ab5c09e14c4c14539338bc0973a41056833dcc73e51ade0eb792816af0a",
+			"asset": "three-blocks/shaders/text.webgpu.json",
+			"assetHash": "fbfaffcbe3bb3b156173923fa9b9144361b33af0f64437c4b18e5d1883737c9a",
+			"backend": "webgpu",
+			"bytes": 208371,
+			"coverage": {
+				"compute": 0,
+				"fragment": 19,
+				"render": 19,
+				"vertex": 19
+			},
+			"inputs": {
+				"src/assets.ts": "39b22a5e9886528d5d55887d76dcdd4a7a9adf73a61e8f5f45ebd85ced972c31",
+				"src/look.ts": "dad983fda6e797748ecdbf6bb1c83f0ae0064923f63ebaeaba15fab341934ff1",
+				"src/scene.ts": "e00115c3ff6d11329f34b1c198e3369248bb8580149718e33a346973622fcf03"
+			},
+			"skipped": {
+				"compute": 0,
+				"render": 0
+			}
+		},
+		"text.webgl": {
+			"artifact": "text.webgl.ts",
+			"artifactHash": "40b52300dc6b6ee6240bd58b9a497e3008f276424b0836b4de6da08c44582fc7",
+			"asset": "three-blocks/shaders/text.webgl.json",
+			"assetHash": "d7bb61b78be982184c66e089ffe5eecd733b5a3b38882dd1fc28d43fa49a1af3",
+			"backend": "webgl",
+			"bytes": 229385,
+			"coverage": {
+				"compute": 0,
+				"fragment": 15,
+				"render": 15,
+				"vertex": 15
+			},
+			"inputs": {
+				"src/assets.ts": "39b22a5e9886528d5d55887d76dcdd4a7a9adf73a61e8f5f45ebd85ced972c31",
+				"src/look.ts": "dad983fda6e797748ecdbf6bb1c83f0ae0064923f63ebaeaba15fab341934ff1",
+				"src/scene.ts": "e00115c3ff6d11329f34b1c198e3369248bb8580149718e33a346973622fcf03"
+			},
+			"skipped": {
+				"compute": 0,
+				"render": 4
+			}
+		}
+	},
+	"schemaVersion": 2,
+	"tool": {
+		"address": 2,
+		"compatibilities": {
+			"webgl": "three-webgl-r185-v1",
+			"webgpu": "three-webgpu-r185-v1"
+		},
+		"compatibility": "three-webgpu-r185-v1",
+		"hydration": 2,
+		"name": "@three-blocks/devtools",
+		"recipe": 1,
+		"transform": 62,
+		"version": "0.1.0"
+	}
+}

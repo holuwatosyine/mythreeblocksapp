@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "template": "text",
+  "layers": [
+    "core",
+    "text"
+  ],
+  "generator": {
+    "name": "create-three-blocks-starter",
+    "version": "0.5.3"
+  },
+  "runtime": {
+    "three": "0.185.1",
+    "threeBlocks": "0.10.0"
+  },
+  "features": {
+    "worker": true,
+    "lenis": true,
+    "assets": [
+      "draco",
+      "ktx2",
+      "meshopt"
+    ],
+    "shaders": true,
+    "stats": true,
+    "text": true
+  },
+  "artifacts": {
+    "shaders": "fresh",
+    "text": "fresh"
+  },
+  "protocol": {
+    "resultFile": 1
+  }
+}

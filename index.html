@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+		<link rel="preload" href="/fonts/geist.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="stylesheet" href="/src/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Three Blocks Website</title>
+		<style>
+			/* block: with the preload above, Geist is normally ready before first paint, so text
+			   appears once, fully formed — nothing to shift. On very slow networks the browser
+			   reveals the metric-matched fallbacks below after ~3s instead. */
+			@font-face { font-family: 'Geist Sans'; src: url('/fonts/geist.woff2') format('woff2'); font-display: block; }
+			/* Metric-compatible stand-ins (average-width ratios measured against Geist 1.600):
+			   fallback text occupies the same lines and boxes, so the arrival of Geist swaps
+			   glyph shapes without moving layout. One face per weight range — bold Arial is
+			   narrower than Geist 700, so it gets its own size-adjust. */
+			@font-face {
+				font-family: 'Geist Sans Fallback';
+				src: local('Arial');
+				font-weight: 100 500;
+				size-adjust: 99.62%;
+				ascent-override: 100.88%;
+				descent-override: 29.61%;
+				line-gap-override: 0%;
+			}
+			@font-face {
+				font-family: 'Geist Sans Fallback';
+				src: local('Arial Bold'), local('Arial-BoldMT'), local('Arial');
+				font-weight: 501 900;
+				size-adjust: 102.24%;
+				ascent-override: 98.30%;
+				descent-override: 28.85%;
+				line-gap-override: 0%;
+			}
+			@font-face { font-family: 'Noto Sans JP'; src: url('/fonts/noto-jp.woff2') format('woff2'); font-display: swap; }
+			:root { --font-sans: 'Geist Sans', 'Geist Sans Fallback', ui-sans-serif, system-ui, sans-serif; font-family: var(--font-sans); }
+			[lang='ja'] { font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; }
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<canvas id="scene" aria-hidden="true"></canvas>
+			<aside class="starter-note" aria-label="Three Blocks: rendered in a worker, shaders precompiled. Edit src/scene.ts." data-detail="rendered in a worker · shaders precompiled — edit src/scene.ts">three-blocks</aside>
+			<main>
+				<section>
+					<div>
+						<!-- Styled with the monospace UI stack, so it stays plain DOM text: mirroring
+						     needs the CSS family and the atlas font to be the same typeface. -->
+						<p class="eyebrow">Three Blocks · website</p>
+						<h1 class="type-hero" aria-label="Type in motion."><span class="type-line" data-canvas-text data-canvas-font="geist">Type in</span><span class="type-line" data-canvas-text data-canvas-font="geist">motion.</span></h1>
+						<p class="type-proof" data-canvas-text data-canvas-font="geist">Select this headline — it renders on the GPU.</p>
+					</div>
+				</section>
+				<section lang="ja">
+					<div>
+						<h2 class="jp-proof" data-canvas-text data-canvas-font="noto">動きに、構造を。</h2>
+						<p data-canvas-text data-canvas-font="noto">DOM が真実。GPU は動きを描く。</p>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

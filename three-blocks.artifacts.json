@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "template": "text",
+  "shader": {
+    "schemaVersion": 1,
+    "kind": "shader",
+    "template": "text",
+    "status": "fresh",
+    "capturedWith": {
+      "three": "0.185.1",
+      "threeBlocks": "0.10.0"
+    },
+    "files": [
+      ".three-blocks/shaders/text.webgpu.ts",
+      ".three-blocks/shaders/meta.json",
+      ".three-blocks/shaders/timing.json",
+      "public/three-blocks/shaders/text.webgpu.json",
+      ".three-blocks/shaders/text.webgl.ts",
+      "public/three-blocks/shaders/text.webgl.json"
+    ],
+    "note": "Captured complete text template for WebGPU and WebGL."
+  },
+  "text": {
+    "schemaVersion": 1,
+    "kind": "text",
+    "template": "text",
+    "status": "fresh",
+    "capturedWith": {
+      "three": "0.185.1",
+      "threeBlocks": "0.10.0"
+    },
+    "files": [
+      "public/fonts/OFL-1.1.txt",
+      "public/fonts/geist.woff2",
+      "public/fonts/geist.msdf.json",
+      "public/fonts/geist.msdf.ktx2",
+      "public/fonts/geist.msdf.meta.json",
+      "public/fonts/geist.w700.msdf.json",
+      "public/fonts/geist.w700.msdf.ktx2",
+      "public/fonts/noto-jp.woff2",
+      "public/fonts/noto-jp.msdf.json",
+      "public/fonts/noto-jp.msdf.ktx2",
+      "public/fonts/noto-jp.msdf.meta.json"
+    ],
+    "note": "Validated Geist and Noto Sans JP browser/MSDF outputs generated from the complete text template."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "three-blocks": {
+      "source": "threejs-blocks.com",
+      "sourceType": "well-known",
+      "computedHash": "5f374999d533fdf75903f11c329999536e35824dd52847f937d53e95ac5211bc"
+    }
+  }
+}

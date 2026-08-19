@@ -1,0 +1,28 @@
+{
+	"adapter": "WebGL adapter",
+	"measuredAt": "2026-08-07T10:56:25.043Z",
+	"platform": "darwin/arm64",
+	"receiptHash": "626feacb46b9026fcc07850060cafb9635a2287e4fbfaf61af231451b1b3ce0c",
+	"scenes": {
+		"text": {
+			"avoidedBuildMs": 77.69999933242798,
+			"builds": 19,
+			"liveBuildMs": 77.69999933242798,
+			"precompiledBuildMs": 0,
+			"runs": 1,
+			"setupMeasured": false,
+			"spreadMs": 0
+		},
+		"text.webgl": {
+			"avoidedBuildMs": 76.09999990463257,
+			"builds": 15,
+			"liveBuildMs": 76.09999990463257,
+			"precompiledBuildMs": 0,
+			"runs": 1,
+			"setupMeasured": false,
+			"spreadMs": 0
+		}
+	},
+	"schemaVersion": 3,
+	"source": "committed-capture"
+}

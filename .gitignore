@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.three-blocks/runtime/
+.three-blocks/shaders/timing.local.json
+.DS_Store
+*.log
